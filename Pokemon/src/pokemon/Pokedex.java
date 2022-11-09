@@ -4,6 +4,7 @@ import java.util.Set;
 
 public class Pokedex <T extends Nameable>{
 
+    // TODO wie kriege ich die Informationen aus der Klasse Pokemon ?
     void add(T nameable){
         // Fügt übergebenes Objekt dem Pokedex hinzu
 

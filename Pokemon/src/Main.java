@@ -8,8 +8,11 @@ import pokemon.Pokemon;
 import pokemon.Schiggy;
 import pokemon.Taubsi;
 import teams.Team;
+import pokemon.Pokedex;
+
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public abstract class Main {
     public static void main(String[] args) {
@@ -67,19 +70,19 @@ public abstract class Main {
     }
 
     static void fillPokedex() {
-        var myPokedex = new HashMap<Integer, String>();
-        myPokedex.put(117, "Seemon");
-        myPokedex.put(142, "Aerodactyl");
-        myPokedex.put(130, "Garados");
-        myPokedex.put(6, "Glurak");
-        myPokedex.put(149, "Dragoran");
+        var myPokedex = new HashSet<String>();
+        myPokedex.add("Seemon");
+        myPokedex.add("Aerodactyl");
+        myPokedex.add("Garados");
+        myPokedex.add("Glurak");
+        myPokedex.add("Dragoran");
 
-        var otherPokedex = new HashMap<Integer, String>();
-        otherPokedex.put(24, "Arbok");
-        otherPokedex.put(34, "Nidoking");
-        otherPokedex.put(89, "Sleimok");
-        otherPokedex.put(110, "Smogmog");
-        otherPokedex.put(94, "Gengar");
+        var otherPokedex = new HashSet<String>();
+        otherPokedex.add("Arbok");
+        otherPokedex.add("Nidoking");
+        otherPokedex.add("Sleimok");
+        otherPokedex.add("Smogmog");
+        otherPokedex.add("Gengar");
 
         System.out.println("Mein Pokedex: " + myPokedex);
         System.out.println("Anderer Pokedex: " + otherPokedex);

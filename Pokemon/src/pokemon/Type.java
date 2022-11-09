@@ -46,6 +46,8 @@ interface GrassType extends PokemonType {
     }
 }
 
+
+// TODO richtig implementieren, sodass 2. Stärke funktioniert
 interface ElectricType extends PokemonType {
 
     default boolean isWeakAgainst(Pokemon other) {return  other instanceof GrassType;}
